@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+}
+
+table td {
+    width: 1px;
+
+}
+
+.form {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.drop {
+    width: 200px;
+    height: 20px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+.simpan-btn {
+    padding-left: 192px;
+}
+
+button {
+    width: 200px;
+    height:20px;
+}
+
+.inp-simpan {
+    height: 200px;
+}
