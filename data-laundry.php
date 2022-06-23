@@ -44,9 +44,9 @@ include "koneksi.php";
                                 </a>
                             </td>
                         </tr>
-                <?php
-                    endwhile;
-                ?>
+                    <?php
+                        endwhile;
+                    ?>
             </table>
         </div>
         <div class="col">
