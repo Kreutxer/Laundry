@@ -23,6 +23,7 @@ include "koneksi.php";
             <table>
                 <tr>
                     <th>ID Laundry</th>
+                    <th>ID Pelanggan</th>
                     <th>Nama Pelanggan</th>
                     <th>Nomor Telepon</th>
                     <th>Alamat</th>
@@ -34,6 +35,7 @@ include "koneksi.php";
                         ?>
                         <tr>
                             <td><?= $data['id_laundry'] ?></td>
+                            <td><?= $data['id_pelanggan']?></td>
                             <td><?= $data['nama_pelanggan'] ?></td>
                             <td><?= $data['no_telp'] ?></td>
                             <td><?= $data['alamat'] ?></td>
@@ -43,7 +45,9 @@ include "koneksi.php";
                 ?>
             </table>
         </div>
-        <div class="col"></div>
+        <div class="col">
+            <a href=""></a>
+        </div>
     </div>
 </body>
 </html>

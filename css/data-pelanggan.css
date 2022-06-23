@@ -44,9 +44,7 @@ table tr {
     font-family: sans-serif;
 }
 
-table td {
-    border-bottom: 1px solid black;
-}
+
 
 .table table tr:nth-of-type(even){
     background-color: #d2d2d2;
