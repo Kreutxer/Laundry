@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cabin:wght@700&family=Fira+Sans+Condensed:wght@300;700&family=Josefin+Sans:wght@700&family=Lexend+Deca:wght@300&family=Manrope:wght@800&family=Montserrat:wght@100;800&family=Poppins:wght@100;200;300&family=Red+Hat+Display:ital,wght@1,900&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;500;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@
     align:center;
     justify-content: center;
     padding: 10px;
-    font-family: sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 .table {
     height: 640px;
@@ -37,11 +39,11 @@ table, td {
 table th{
     height: 30px;
     background-color: #9DD6DF;
-    font-family: sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 table tr {
-    font-family: sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 
@@ -52,8 +54,35 @@ table tr {
 
 .col {
     height: 40px;
-    background-color: #9DD6DF;
+    background-color: aliceblue;
 }
+
+.action {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+
+.edit {
+    background-image: url(../images/edit.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.hapus {
+    background-image: url(../images/delete.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+
+
 /* table, td{
     border: 1px solid black;
     align-items: center;

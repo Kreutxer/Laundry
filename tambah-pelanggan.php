@@ -34,10 +34,15 @@
                     <div class="id-laundry">
                         <select name="idLaundry">
                             <option value="Pilih">--Pilih ID Laundry--</option>
-                            <option value="L01">L01 - Kain Tipis</option>
-                            <option value="L02">L02 - Kain Sedang</option>
-                            <option value="L03">L03 - Kain Tebal</option>
-                            <option value="L03">L04 - Kain Levis</option>
+                            <?php $k = mysqli_query($db, "SELECT * FROM laundry");
+                                
+                                foreach ($k as $row) : 
+                            ?>
+                            
+                                <option value="<?php echo $row['id_laundry']?>"><?php echo $row['id_laundry']. " - " .$row['jenis_laundry']?></option>
+                            <?php
+                                endforeach;
+                            ?>
                         </select>
                     </div>
                     <div class="id-Pelanggan">

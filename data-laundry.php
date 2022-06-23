@@ -17,33 +17,29 @@ include "koneksi.php";
 <body>
     <div class="container">
         <div class="title">
-            <h1>Data Pelanggan</h1>
+            <h1>Data Laundry</h1>
         </div>
         <div class="table">
             <table>
                 <tr>
                     <th>ID Laundry</th>
-                    <th>ID Pelanggan</th>
-                    <th>Nama Pelanggan</th>
-                    <th>Nomor Telepon</th>
-                    <th>Alamat</th>
+                    <th>Harga</th>
+                    <th>Jenis Laundry</th>
                 </tr>
                     <?php
                     $no=1;
-                    $query=mysqli_query($db, 'SELECT * FROM pelanggan');
+                    $query=mysqli_query($db, 'SELECT * FROM laundry');
                     while($data = mysqli_fetch_array($query)):
                         ?>
                         <tr>
                             <td><?= $data['id_laundry'] ?></td>
-                            <td><?= $data['id_pelanggan']?></td>
-                            <td><?= $data['nama_pelanggan'] ?></td>
-                            <td><?= $data['no_telp'] ?></td>
-                            <td><?= $data['alamat'] ?></td>
+                            <td><?= $data['harga']?></td>
+                            <td><?= $data['jenis_laundry'] ?></td>
                             <td class="action">
                                 <a href="">
                                     <div class="edit"></div>
                                 </a>
-                                <a href="delete.php?id_pelanggan=<?php echo $data['id_pelanggan']?>">
+                                <a href="">
                                     <div class="hapus"></div>
                                 </a>
                             </td>
@@ -54,6 +50,7 @@ include "koneksi.php";
             </table>
         </div>
         <div class="col">
+
         </div>
     </div>
 </body>
